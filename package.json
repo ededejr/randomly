@@ -1,7 +1,7 @@
 {
-  "name": "npm-browser-package-template",
+  "name": "@dxede/randomly",
   "version": "0.0.0",
-  "description": "A template repository for npm packages designed for the browser",
+  "description": "A utility for generating random numbers very frequently.",
   "main": "build/index.js",
   "scripts": {
     "build": "tsc",

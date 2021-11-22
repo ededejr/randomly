@@ -59,7 +59,7 @@
         "npm run build:candidate"
       ],
       "after:git:release": "cp package.json build/package.json && cp README.md build/README.md",
-      "after:release": "npm publish build"
+      "after:release": "npm publish ./build"
     }
   },
   "publishConfig": {

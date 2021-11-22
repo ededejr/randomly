@@ -8,8 +8,7 @@
     "build:candidate": "tsc -p tsconfig.prod.json",
     "lint": "eslint",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "release": "release-it"
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",

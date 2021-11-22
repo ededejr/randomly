@@ -1,7 +1,5 @@
-# Randomly
-A utility for generating lots of random numbers without being too tasking on the browser. Randomly accomplishes this by generating a set of random numbers on a given interval.
-
-Subsequent requests for random numbers are served from the generated set instead of calling `Math.random`. In addition to getting random numbers, some useful methods have also been added around random numbers.
+# <package_name>
+Enter a short description of your package...
 
 ## Developing
 

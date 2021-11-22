@@ -2,7 +2,7 @@
   "name": "@dxede/randomly",
   "version": "0.1.0",
   "description": "A utility for generating random numbers very frequently.",
-  "main": "build/index.js",
+  "main": "index.js",
   "scripts": {
     "build": "tsc",
     "build:candidate": "tsc -p tsconfig.prod.json",

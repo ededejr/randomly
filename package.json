@@ -1,5 +1,5 @@
 {
-  "name": "@dxede/randomly",
+  "name": "@ededejr/randomly",
   "version": "0.1.0",
   "description": "A utility for generating random numbers very frequently.",
   "main": "index.js",
@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dxede/randomly.git"
+    "url": "git+https://github.com/ededejr/randomly.git"
   },
   "keywords": [
     "npm",
     "package"
   ],
-  "author": "@dxede",
+  "author": "@ededejr",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dxede/randomly/issues"
+    "url": "https://github.com/ededejr/randomly/issues"
   },
-  "homepage": "https://github.com/dxede/randomly#readme",
+  "homepage": "https://github.com/ededejr/randomly#readme",
   "devDependencies": {
     "@release-it/conventional-changelog": "^3.0.1",
     "@types/jest": "^26.0.23",

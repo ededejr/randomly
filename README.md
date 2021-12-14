@@ -61,7 +61,7 @@ randomly.startTimer();
 import Randomly from '@ededejr/randomly';
 
 const randomly = new Randomly({
-    interval: 5000, // refresh random number store every 5 seconds
+    refreshInterval: 5000, // refresh random number store every 5 seconds
     storeSize: 100 // keep a store of a 100 random numbers
 });
 ```

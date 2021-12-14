@@ -17,8 +17,8 @@ describe('Randomly', () => {
 	});
 
 	test('startTimer calls stopTimer', async () => {
-		const interval = 500;
-		const random = new Randomly({ interval });
+		const refreshInterval = 500;
+		const random = new Randomly({ refreshInterval });
 		jest.spyOn(random, 'stopTimer');
 		random.startTimer();
 		expect(random.stopTimer).toHaveBeenCalledTimes(1);

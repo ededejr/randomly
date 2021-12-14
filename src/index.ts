@@ -1,11 +1,12 @@
 export default class Randomly {
   private store: number[];
+  private cursor = 0;
 	private interval: number;
   private timerId?: NodeJS.Timeout;
 
   constructor(options: Randomly.Options = {}) {
   	this.store = new Array(options.storeSize || 20).fill(undefined).map(() => Math.random());
-  	this.interval = options.interval || 1000;
+  	this.interval = options.refreshInterval || 1000;
   	this.startTimer();
   }
 
@@ -114,14 +115,20 @@ export default class Randomly {
    * @returns number
    */
   private $get() {
-  	return this.store[Math.floor(Math.random() * this.store.length)];
+  	const result = this.store[this.cursor];
+    
+    if (this.cursor === this.store.length - 1) {
+      this.cursor = 0;
+    }
+
+    return result;
   }
 }
 
 export declare namespace Randomly {
   export interface Options {
     storeSize?: number;
-		interval?: number;
+		refreshInterval?: number;
   }
   
   export type ComparePredicate = (n: number) => boolean

@@ -3,6 +3,16 @@ A utility for generating lots of random numbers without being too tasking on the
 
 Subsequent requests for random numbers are served from the generated set instead of calling `Math.random`. In addition to getting random numbers, some useful methods have also been added around random numbers.
 
+### Motivation
+
+Working on several generative art projects inspired the need for a common utility which would handle very frequent calls to `Math.random` as well as other provided methods which involve using random numbers.
+
+### Benchmarks
+
+Why not just use `Math.random`? Depending on how many numbers are being generated `Randomly` tends to be more performant as frequency increases. The following chart shows their comparison. You can view how this was measured in the `benchmark.ts` file.
+
+<img src="./benchmark-chart.svg" />
+
 ## Usage
 
 ```ts

@@ -9,7 +9,7 @@ Working on several generative art projects inspired the need for a common utilit
 
 ### Benchmarks
 
-Why not just use `Math.random`? Depending on how many numbers are being generated `Randomly` tends to be more performant as frequency increases. The following chart shows their comparison. You can view how this was measured in the `benchmark.ts` file.
+Why not just use `Math.random`? Depending on how many numbers are being generated `Randomly` tends to be more performant as frequency increases. The following chart shows their comparison. You can view how this was measured in the [benchmark.ts](https://github.com/ededejr/randomly/blob/main/benchmark.ts) file.
 
 <img src="./benchmark-chart.svg" />
 

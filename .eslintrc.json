@@ -45,5 +45,6 @@
                 "allowSeparatedGroups": true
             }
         ]
-    }
+    },
+    "ignorePatterns": "build/*"
 }

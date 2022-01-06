@@ -9,13 +9,10 @@
     "outDir": "./build",
     "strict": true,
     "noUnusedLocals": true,
-    // "baseUrl": "./",
-    // "paths": {},
-    // "typeRoots": [],                             /* List of folders to include type definitions from. */
-    // "types": [],                                 /* Type declaration files to be included in compilation. */
+    "baseUrl": "./src",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["src/**/tests/", "*.test.ts"]
+  "exclude": ["src/**/tests/", "*.test.ts", "benchmark*"]
 }

@@ -10,7 +10,6 @@ const config = {
     {
       file: 'build/index.js',
       format: 'cjs',
-      name: 'randomly',
     }
   ],
   plugins: [

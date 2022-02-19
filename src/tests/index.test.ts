@@ -3,7 +3,6 @@ import Randomly from '..';
 jest.useFakeTimers();
 jest.spyOn(global, 'setTimeout');
 
-
 describe('Randomly', () => {
 	beforeEach(() => {
 		jest.resetAllMocks();

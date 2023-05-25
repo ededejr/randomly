@@ -1,4 +1,4 @@
-export default class Randomly {
+export class Randomly {
 	private store: number[];
 	private cursor = 0;
 	private interval: number;

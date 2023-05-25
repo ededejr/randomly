@@ -1,17 +1,11 @@
 {
-  "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["ESNext", "DOM"],
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
-    "outDir": "./build",
-    "strict": true,
-    "noUnusedLocals": true,
-    "baseUrl": "./src",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
+	"compilerOptions": {
+		"lib": ["ESNext", "DOM"],
+		"module": "commonjs",
+		"noImplicitAny": true,
+		"removeComments": true,
+		"preserveConstEnums": true,
+		"sourceMap": true,
+		"outDir": "build"
+	}
 }

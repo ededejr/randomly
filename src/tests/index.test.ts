@@ -1,4 +1,4 @@
-import Randomly from '..';
+import { Randomly } from '..';
 
 jest.useFakeTimers();
 jest.spyOn(global, 'setTimeout');

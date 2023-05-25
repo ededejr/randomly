@@ -1,29 +1,6 @@
-import Randomly from './src';
+import type { Script } from '../runner';
+import { getDistDir } from '../utils';
 import { runNTimes, timeTaken } from '@ededejr/utils';
-
-const randomly = new Randomly({ refreshInterval: 60000 });
-
-function main() {
-	runIterations(1);
-	runIterations(100);
-	runIterations(1000);
-	runIterations(10_000);
-	runIterations(100_000);
-	runIterations(1_000_000);
-	runIterations(10_000_000);
-	runIterations(50_000_000);
-	runIterations(150_000_000);
-	runIterations(500_000_000);
-	runIterations(1_000_000_000);
-	process.exit();
-}
-
-function runIterations(count: number) {
-	console.log(`[${sc(count)}]----------------------------`);
-	measureRun(() => Math.random(), count, 'Math.Random');
-	measureRun(() => randomly.get(), count, 'Randomly.get');
-	console.log(' ');
-}
 
 function measureRun(candidate: () => void, count?: number, name?: string) {
 	const _count = count || 100000;
@@ -70,4 +47,36 @@ function sc(value: number) {
 	return newValue;
 }
 
-main();
+const BenchmarkScript: Script = {
+	name: 'benchmark',
+	run: async () => {
+		const { Randomly } = await import(getDistDir());
+		const randomly = new Randomly({ refreshInterval: 60000 });
+
+		function runIterations(count: number) {
+			console.log(`[${sc(count)}]----------------------------`);
+			measureRun(() => Math.random(), count, 'Math.Random');
+			measureRun(() => randomly.get(), count, 'Randomly.get');
+			console.log(' ');
+		}
+
+		function runAllIterations() {
+			runIterations(1);
+			runIterations(100);
+			runIterations(1000);
+			runIterations(10_000);
+			runIterations(100_000);
+			runIterations(1_000_000);
+			runIterations(10_000_000);
+			runIterations(50_000_000);
+			runIterations(150_000_000);
+			runIterations(500_000_000);
+			runIterations(1_000_000_000);
+		}
+
+		runAllIterations();
+		return true;
+	},
+};
+
+export default BenchmarkScript;

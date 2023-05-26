@@ -108,7 +108,6 @@ export class Randomly {
 		if (!this.store) {
 			return;
 		}
-
 		this.store = this.store.map(() => Math.random());
 	}
 
@@ -117,7 +116,7 @@ export class Randomly {
 	 * @returns number
 	 */
 	private $get() {
-		const result = this.store[this.cursor];
+		const result = this.store[this.cursor++];
 
 		if (this.cursor === this.store.length - 1) {
 			this.cursor = 0;

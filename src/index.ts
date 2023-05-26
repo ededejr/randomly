@@ -118,7 +118,7 @@ export class Randomly {
 	private $get() {
 		const result = this.store[this.cursor++];
 
-		if (this.cursor === this.store.length - 1) {
+		if (this.cursor === this.store.length) {
 			this.cursor = 0;
 		}
 

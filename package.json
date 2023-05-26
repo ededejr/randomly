@@ -26,8 +26,12 @@
 		"url": "git+https://github.com/ededejr/randomly.git"
 	},
 	"keywords": [
-		"npm",
-		"package"
+		"random",
+		"numbers",
+		"generator",
+		"generative art",
+		"decisions",
+		"Math.random"
 	],
 	"author": "@ededejr",
 	"license": "LICENSE",

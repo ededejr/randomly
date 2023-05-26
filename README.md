@@ -14,8 +14,6 @@ Why not just use `Math.random`? Depending on how many numbers are being generate
 
 <img src="./benchmark-chart.svg" />
 
-> At lower than 10,000 results seemed insignificant, and fluctuated between both methods.
-
 ## Usage
 
 ```ts
